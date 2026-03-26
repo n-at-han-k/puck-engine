@@ -1,0 +1,8 @@
+<div class="puck-page" data-controller="puck-render">
+  <div id="puck-render-root" 
+       data-puck-render-target="root"
+       data-page-data="<%= @page.puck_data.to_json %>">
+  </div>
+</div>
+
+<%= javascript_import_module "puck_engine/puck_render" %>

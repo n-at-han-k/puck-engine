@@ -1,0 +1,16 @@
+<div class="puck-engine-editor" data-controller="puck-editor">
+  <div class="editor-header">
+    <h1>Edit Page: <%= @page.title %></h1>
+    <%= link_to "Back to Pages", editor_index_path, class: "btn" %>
+  </div>
+  
+  <div class="editor-container" 
+       data-puck-editor-target="container"
+       data-page-id="<%= @page.id %>"
+       data-page-data="<%= @page.puck_data.to_json %>"
+       data-components="<%= @components.to_json %>">
+    <div id="puck-root"></div>
+  </div>
+</div>
+
+<%= javascript_import_module "puck_engine/puck_editor" %>

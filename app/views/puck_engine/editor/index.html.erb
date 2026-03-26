@@ -1,0 +1,33 @@
+<div class="puck-engine-editor">
+  <h1>Puck Editor</h1>
+  
+  <div class="pages-list">
+    <h2>Pages</h2>
+    <%= link_to "Create New Page", new_editor_path, class: "btn btn-primary" %>
+    
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Slug</th>
+          <th>Status</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% @pages.each do |page| %>
+          <tr>
+            <td><%= page.title %></td>
+            <td><%= page.slug %></td>
+            <td><%= page.published? ? "Published" : "Draft" %></td>
+            <td>
+              <%= link_to "Edit", editor_path(page), class: "btn btn-sm" %>
+              <%= link_to "View", page_path(page), class: "btn btn-sm", target: "_blank" %>
+              <%= button_to "Delete", editor_path(page), method: :delete, class: "btn btn-sm btn-danger", data: { confirm: "Are you sure?" } %>
+            </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

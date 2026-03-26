@@ -1,0 +1,21 @@
+===============================================================================
+
+PuckEngine has been installed successfully!
+
+Next steps:
+
+1. Run migrations:
+   rails db:migrate
+
+2. Mount the engine in config/routes.rb:
+   mount PuckEngine::Engine => "/puck"
+
+3. Visit the editor at:
+   /puck/editor
+
+4. Create your first page and start building!
+
+For more information, see the README at:
+https://github.com/puckeditor/puck-engine
+
+===============================================================================

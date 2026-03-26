@@ -1,0 +1,302 @@
+/*
+ *= require_self
+ */
+
+/* PuckEngine - Site Building Engine Styles */
+
+/* Base styles */
+.puck-engine-editor {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.puck-engine-editor h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+/* Header */
+.editor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #0066cc;
+  color: white;
+  border-color: #0066cc;
+}
+
+.btn-primary:hover {
+  background-color: #0052a3;
+  border-color: #0052a3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+.btn-sm {
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+/* Pages list */
+.pages-list {
+  margin-top: 2rem;
+}
+
+.pages-list h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.pages-list table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.pages-list th,
+.pages-list td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.pages-list th {
+  font-weight: 600;
+  background-color: #f8f9fa;
+}
+
+.pages-list tr:hover {
+  background-color: #f8f9fa;
+}
+
+/* Form styles */
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.field input[type="text"],
+.field input[type="email"],
+.field textarea {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.field textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.field input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Error styles */
+.errors {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.errors h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.errors ul {
+  margin: 0;
+  padding-left: 1.5rem;
+}
+
+/* Editor container */
+.editor-container {
+  margin-top: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  min-height: 600px;
+  background-color: #fafafa;
+}
+
+#puck-root {
+  height: 100%;
+  min-height: 600px;
+}
+
+/* Page rendering */
+.puck-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.puck-loading {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
+
+/* Pages index */
+.puck-pages-index {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.pages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 2rem;
+}
+
+.page-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  background: white;
+  transition: box-shadow 0.2s ease;
+}
+
+.page-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.page-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.page-card h3 a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.page-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.page-card p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 4px;
+}
+
+.badge.published {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.badge.draft {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+/* Component cards */
+.component-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: white;
+}
+
+.component-card h4 {
+  margin-top: 0;
+  margin-bottom: 8px;
+}
+
+.component-card .category {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .puck-engine-editor {
+    padding: 10px;
+  }
+  
+  .editor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
+  .pages-list table {
+    font-size: 14px;
+  }
+  
+  .pages-list th,
+  .pages-list td {
+    padding: 8px;
+  }
+  
+  .pages-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Import Puck CSS */
+@import url("https://unpkg.com/@puckeditor/core@0.21.1/dist/index.css");
