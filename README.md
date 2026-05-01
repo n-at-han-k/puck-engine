@@ -1,5 +1,7 @@
 # PuckEngine
 
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/n-at-han-k/puck-engine)
+
 A Rails engine that integrates [Puck](https://github.com/puckeditor/puck) - the open-source visual editor for React - to enable building sites with a drag-and-drop page builder.
 
 ## What is Puck?
